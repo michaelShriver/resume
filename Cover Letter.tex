@@ -1,0 +1,142 @@
+% Michael Shriver's Resume
+% Based on the template by Andrew McNabb
+% Created: 2 Dec 2006
+% Last Modified: 25 Oct 2012
+
+\documentclass[10pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Michael Shriver}
+\newcommand{\dte}{October 25th, 2012}
+\newcommand{\addr}{2414 NW 56th St; Seattle, WA}
+\newcommand{\phone}{(360) 474-7453}
+\newcommand{\email}{shriver@gmail.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+\hfill\dte
+
+% Name with horizontal rule
+\bigname{\name}
+
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\baselineskip}
+
+Synapse Product Development
+
+1511 6th Avenue Suite 400
+
+Seattle, WA
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+Hello,
+
+\vspace{\baselineskip}
+
+My friend Samiur recently was hired at Synapse, and since he started working there, he has had nothing but good things to say about the company and the working environment at Synapse. Samiur recently pointed me to a job posting on your website that describes almost exactly the kind of job I have been seeking, at an environment that I can thrive in.
+
+\vspace{\baselineskip}
+
+I have been working in the tech support field for the last 5 years, or so. My career has been spent mostly with on-phone support in internally facing Help Desks. Moving up in these jobs, I have been able to hone my troubleshooting experience and refine my communication skills with users of all technical backgrounds. There is only so far that I can rise in Help Desk jobs, though. I would much prefer the face-to-face interactions of an onsite tech support job, and the blackbelt user and desktop support position seems to fit that description perfectly.
+
+\vspace{\baselineskip}
+
+I am excited to apply for this job, and get a chance to explore my potential fit at Synapse.
+
+\vspace{\baselineskip}
+
+Thanks for considering me,
+
+\vspace{\baselineskip}
+
+Michael Shriver
+
+\end{document}
