@@ -29,29 +29,29 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-	\begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
+    \begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
-	{\fontfamily{phv}\selectfont\Large#1}
-	\begin{itemize}
-	\vspace{3pt}
+    \vspace{4pt}
+    {\fontfamily{phv}\selectfont\Large#1}
+    \begin{itemize}
+    \vspace{3pt}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-	\vspace{-4pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+    \vspace{-4pt}
+    \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-	\vspace{-1pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+    \vspace{-1pt}
+    \item \begin{flushleft} #1 \end{flushleft}
 }
 
 % A resbigitem is a complex list element for stuff like jobs and education:
@@ -59,28 +59,28 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-	\vspace{-5pt}
-	\item
-	\textbf{#1}---#2 \\
-	\textit{#3}
+    \vspace{-5pt}
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
 }
 
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
-	\resbigitem{#1}{#2}{#3}
-	\vspace{-2pt}
-	\begin{itemize}
+    \resbigitem{#1}{#2}{#3}
+    \vspace{-2pt}
+    \begin{itemize}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-	\resitem{\textbf{#1}}
-	\vspace{-5pt}
-	\begin{itemize}
+    \resitem{\textbf{#1}}
+    \vspace{-5pt}
+    \begin{itemize}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 

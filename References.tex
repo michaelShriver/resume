@@ -23,32 +23,32 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-	\begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
+    \begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
-	{\fontfamily{phv}\selectfont\Large#1}
-	\begin{itemize}
-	\vspace{3pt}
+    \vspace{4pt}
+    {\fontfamily{phv}\selectfont\Large#1}
+    \begin{itemize}
+    \vspace{3pt}
 }{
-	\end{itemize}
+    \end{itemize}
 }
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-	\vspace{-1pt}
-	\item \begin{flushleft} #1 \end{flushleft}
+    \vspace{-1pt}
+    \item \begin{flushleft} #1 \end{flushleft}
 }
 
 \newenvironment{ressubsec}[4]{
-	\item
-	\textbf{#1}---#2 \\
-	\textit{#3}
-	\newline
-	\textit{#4}
-	\vspace{-2pt}
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
+    \newline
+    \textit{#4}
+    \vspace{-2pt}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -69,25 +69,25 @@
 
 \begin{ressection}{References}
 
-	\begin{ressubsec}{Mike Lovett}{Coworker/Supervisor}
-	{(425) 503-4407}
-	{lovettmi@gmail.com}
-	\end{ressubsec}
+    \begin{ressubsec}{Mike Lovett}{Coworker/Supervisor}
+    {(425) 503-4407}
+    {lovettmi@gmail.com}
+    \end{ressubsec}
 
-	\begin{ressubsec}{Rafael Guajardo}{Former Recruiter}
-	{(206) 235-1932}
-	{rafaelguajardo@gmail.com}
-	\end{ressubsec}
+    \begin{ressubsec}{Rafael Guajardo}{Former Recruiter}
+    {(206) 235-1932}
+    {rafaelguajardo@gmail.com}
+    \end{ressubsec}
 
-	\begin{ressubsec}{Kyle Igarashi}{Personal Friend}
-	{(206) 851-0972}
-	{kyle.igarashi@gmail.com}
-	\end{ressubsec}
-	
-	\begin{ressubsec}{Yuki Lamb}{Personal Friend}
-	{(206) 353-1744}
-	{lamye117@gmail.com}
-	\end{ressubsec}
+    \begin{ressubsec}{Kyle Igarashi}{Personal Friend}
+    {(206) 851-0972}
+    {kyle.igarashi@gmail.com}
+    \end{ressubsec}
+    
+    \begin{ressubsec}{Yuki Lamb}{Personal Friend}
+    {(206) 353-1744}
+    {lamye117@gmail.com}
+    \end{ressubsec}
 
 \end{ressection}
 
