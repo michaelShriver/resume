@@ -1,11 +1,18 @@
 % Michael Shriver's Resume
 % Based on the template by Andrew McNabb
 % Created: 2 Dec 2006
-% Last Modified: 2/5/2018
+% Last Modified: 7/3/2019
 
 \documentclass[10pt,oneside]{article}
 \usepackage{geometry}
-\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,
+	UprightFont = Overpass ExtraLight,
+	ItalicFont = Overpass ExtraLight Italic,
+	BoldFont = Overpass Regular,
+	BoldItalicFont = Overpass Italic]
+	{Overpass}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -28,13 +35,13 @@
 
 % This defines how the name looks
 \newcommand{\bigname}[1]{
-    \begin{flushleft}\fontfamily{ppl}\selectfont\Huge\scshape#1\end{flushleft}
+    \begin{flushleft}\Huge\textbf{#1}\end{flushleft}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
     \vspace{4pt}
-    {\fontfamily{ppl}\selectfont\Large#1}
+    {\Large\textbf{#1}}
     \begin{itemize}
     \vspace{3pt}
 }{
@@ -49,7 +56,7 @@
 
 % A ressubitem is a simple list element in anything but a ressection (second level)
 \newcommand{\ressubitem}[1]{
-    \vspace{-1pt}
+    \vspace{-2pt}
     \item \begin{flushleft} #1 \end{flushleft}
 }
 
@@ -67,7 +74,7 @@
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
     \resbigitem{#1}{#2}{#3}
-    \vspace{-2pt}
+    \vspace{-1pt}
     \begin{itemize}
 }{
     \end{itemize}
@@ -86,8 +93,6 @@
 % Now for the actual document:
 
 \begin{document}
-
-\fontfamily{ppl} \selectfont
 
 % Name with horizontal rule
 \bigname{\name}
@@ -183,12 +188,10 @@
     \resitem{Excellent problem solving and troubleshooting skills}
     \resitem{Able to pick up technical procedures and skills quickly}
     \resitem{Able to explain highly technical procedures clearly}
-    \resitem{Experienced in all major operating systems: Windows 9x/NT/2000/XP/Vista/7, Mac OSX and UNIX-based (Linux, BSD, AIX, DEC UNIX)}
+    \resitem{Extensive experience in ITIL Incident and Problem Management.}
+    \resitem{Experienced in all major operating systems: Windows, macOS and UNIX-based (Linux, BSD, AIX, DEC UNIX)}
     \resitem{Experienced in computer networking, administration and hardware}
-    \resitem{Some experience in multiple programming, scripting and markup languages (C++, PHP, Perl, UNIX Shell Scripting, HTML/CSS and \LaTeX)}
-    \resitem{Familiar with basic concepts in programming}
-%   \resitem{Clean driving record}
-%   \resitem{Able to lift 150 pounds, routinely}
+    \resitem{Experience in multiple programming, scripting and markup languages (C++, Python, PHP, Perl, UNIX Shell Scripting, HTML/CSS and \LaTeX)}
     \resitem{Independent, goal-oriented worker}
 
 \end{ressection}
