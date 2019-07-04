@@ -1,7 +1,7 @@
 % Michael Shriver's Resume
 % Based on the template by Andrew McNabb
 % Created: 2 Dec 2006
-% Last Modified: 7/3/2019
+% Last Modified: 7/4/2019
 
 \documentclass[10pt,oneside]{article}
 \usepackage{geometry}
@@ -13,6 +13,9 @@
 	BoldFont = Overpass Regular,
 	BoldItalicFont = Overpass Italic]
 	{Overpass}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -27,7 +30,7 @@
 \newcommand{\name}{Michael Shriver}
 \newcommand{\addr}{2428 NW 56th St; Seattle, WA  98107}
 \newcommand{\phone}{(360) 474-7453}
-\newcommand{\email}{michael@shriver.co}
+\newcommand{\email}{\href{mailto:michael@shriver.co}{michael@shriver.co}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
