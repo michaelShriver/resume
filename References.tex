@@ -1,93 +1,17 @@
 \documentclass[11pt,oneside]{article}
-\usepackage{geometry}
-\usepackage[T1]{fontenc}
-
-\pagestyle{empty}
-
-\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
-
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
-\setlength{\itemsep}{0in}
-\setlength{\topsep}{0in}
-\setlength{\tabcolsep}{0in}
-
-% Name and contact information
-\newcommand{\name}{Michael Shriver}
-\newcommand{\addr}{2414 NW 56th St; Seattle, WA}
-\newcommand{\phone}{(360) 474-7453}
-\newcommand{\email}{shriver@gmail.com}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% New commands and environments
-
-% This defines how the name looks
-\newcommand{\bigname}[1]{
-    \begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
-}
-
-% A ressection is a main section (<H1>Section</H1>)
-\newenvironment{ressection}[1]{
-    \vspace{4pt}
-    {\fontfamily{phv}\selectfont\Large#1}
-    \begin{itemize}
-    \vspace{3pt}
-}{
-    \end{itemize}
-}
-
-% A ressubitem is a simple list element in anything but a ressection (second level)
-\newcommand{\ressubitem}[1]{
-    \vspace{-1pt}
-    \item \begin{flushleft} #1 \end{flushleft}
-}
-
-\newenvironment{ressubsec}[4]{
-    \item
-    \textbf{#1}---#2 \\
-    \textit{#3}
-    \newline
-    \textit{#4}
-    \vspace{-2pt}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Now for the actual document:
+\usepackage{Resume}
 
 \begin{document}
-\fontfamily{ppl} \selectfont
 
-% Name with horizontal rule
-\bigname{\name}
-\vspace{-8pt} \rule{\textwidth}{1pt}
+\heading
 
-\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
-
-\vspace{8 pt}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Reference list
 \begin{ressection}{References}
 
-    \begin{ressubsec}{Mike Lovett}{Coworker/Supervisor}
-    {(425) 503-4407}
-    {lovettmi@gmail.com}
-    \end{ressubsec}
-
-    \begin{ressubsec}{Rafael Guajardo}{Former Recruiter}
-    {(206) 235-1932}
-    {rafaelguajardo@gmail.com}
-    \end{ressubsec}
-
-    \begin{ressubsec}{Kyle Igarashi}{Personal Friend}
-    {(206) 851-0972}
-    {kyle.igarashi@gmail.com}
-    \end{ressubsec}
-    
-    \begin{ressubsec}{Yuki Lamb}{Personal Friend}
-    {(206) 353-1744}
-    {lamye117@gmail.com}
-    \end{ressubsec}
+    \begin{refitem}{Reference Name}{Reference Job Title}
+    {(425) 123-4567}
+    {email@gmail.com}
+    \end{refitem}
 
 \end{ressection}
 
