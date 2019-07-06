@@ -1,0 +1,132 @@
+\ProvidesPackage{Resume}
+
+\usepackage{geometry}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX,
+	UprightFont = Overpass ExtraLight,
+	ItalicFont = Overpass ExtraLight Italic,
+	BoldFont = Overpass Regular,
+	BoldItalicFont = Overpass Italic]
+	{Overpass}
+
+\usepackage{enumitem}
+
+\usepackage{datetime}
+\newdateformat{dte}{%
+  \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Michael Shriver}
+\newcommand{\addr}{2428 NW 56th St; Seattle, WA  98107}
+\newcommand{\phone}{(360) 474-7453}
+\newcommand{\email}{\href{mailto:michael@shriver.co}{michael@shriver.co}}
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+    \begin{flushleft}\Huge\textbf{#1}\end{flushleft}
+}
+
+% Header with name and contact information
+\newcommand{\heading}{
+	\bigname{\name}
+	\vspace{-8pt} \rule{\textwidth}{1pt}
+	\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+	\vspace{8 pt}
+}
+
+% A ressection is a main section
+\newenvironment{ressection}[1]{
+    \vspace{4pt}
+    {\Large\textbf{#1}}
+    \begin{itemize}[leftmargin=*, label={}]
+    \vspace{3pt}
+}{
+    \end{itemize}
+}
+
+% A resbulsection is a main section with bullets
+\newenvironment{resbulsection}[1]{
+    \vspace{4pt}
+    {\Large\textbf{#1}}
+    \begin{itemize}
+    \vspace{3pt}
+}{
+    \end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+    \vspace{-4pt}
+    \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+    \vspace{-2pt}
+    \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+    \vspace{-5pt}
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+    \resbigitem{#1}{#2}{#3}
+    \vspace{-1pt}
+    \begin{itemize}
+}{
+    \end{itemize}
+}
+
+% A list item type to be used for reference contact information
+\newenvironment{refitem}[4]{
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
+    \newline
+    \textit{\href{mailto:#4}{#4}}
+    \vspace{-2pt}
+}
+
+% Extended subsection for experience.
+\newenvironment{expsubsec}[4]{
+    \item
+    \textbf{#1}---#2 \\
+    \textit{#3}
+    \newline
+    \textit{#4}
+    \vspace{-2pt}
+    \begin{itemize}
+}{
+    \end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+    \resitem{\textbf{#1}}
+    \vspace{-5pt}
+    \begin{itemize}
+}{
+    \end{itemize}
+}
