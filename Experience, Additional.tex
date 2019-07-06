@@ -1,125 +1,60 @@
 \documentclass[11pt,oneside]{article}
-\usepackage{geometry}
-\usepackage[T1]{fontenc}
-
-\pagestyle{empty}
-
-\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
-
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
-\setlength{\itemsep}{0in}
-\setlength{\topsep}{0in}
-\setlength{\tabcolsep}{0in}
-
-% Name and contact information
-\newcommand{\name}{Michael Shriver}
-\newcommand{\addr}{2414 NW 56th St; Seattle, WA}
-\newcommand{\phone}{(360) 474-7453}
-\newcommand{\email}{shriver@gmail.com}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% New commands and environments
-
-% This defines how the name looks
-\newcommand{\bigname}[1]{
-    \begin{flushleft}\fontfamily{phv}\selectfont\Huge\scshape#1\end{flushleft}
-}
-
-% A ressection is a main section (<H1>Section</H1>)
-\newenvironment{ressection}[1]{
-    \vspace{4pt}
-    {\fontfamily{phv}\selectfont\Large#1}
-    \begin{itemize}
-    \vspace{3pt}
-}{
-    \end{itemize}
-}
-
-% A ressubitem is a simple list element in anything but a ressection (second level)
-\newcommand{\ressubitem}[1]{
-    \vspace{-1pt}
-    \item \begin{flushleft} #1 \end{flushleft}
-}
-
-\newenvironment{ressubsec}[4]{
-    \item
-    \textbf{#1}---#2 \\
-    \textit{#3}
-    \newline
-    \textit{#4}
-    \vspace{-2pt}
-    \begin{itemize}
-}{
-    \end{itemize}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Now for the actual document:
+\usepackage{Resume}
 
 \begin{document}
-\fontfamily{ppl} \selectfont
 
-% Name with horizontal rule
-\bigname{\name}
-\vspace{-8pt} \rule{\textwidth}{1pt}
-
-\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
-
-\vspace{8 pt}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading
 
 \begin{ressection}{Additional Work Experience}
 
-%   \begin{ressubsec}{The Boeing Company}{Bellevue, WA}{Enterprise Help Desk, Tier II Workstation Software Support; April 2007 - Present; \$18.50 Hourly}{Supervisor: Kris Mercer}
+%   \begin{expsubsec}{The Boeing Company}{Bellevue, WA}{Enterprise Help Desk, Tier II Workstation Software Support; April 2007 - Present; \$18.50 Hourly}{Supervisor: Kris Mercer}
 %       \ressubitem{Provide first level support on over 5000 applications to Boeing employees and partners.}
 %       \ressubitem{Provide in-depth support for Windows workstation software; esp. Microsoft Office.}
 %       \ressubitem{Provide basic administrative support for user and machine accounts in Active Directory}
 %       \ressubitem{Troubleshoot PC, network, printing and phone issues.}   
-%   \end{ressubsec}
+%   \end{expsubsec}
 
-    \begin{ressubsec}{SBR Technologies}{Salt Lake City, UT}{Night Oce Manager; August 2006 - Feb 2007; \$6.50 Hourly}{Supervisor: Bob Shorten (801) 486-1391}
+    \begin{expsubsec}{SBR Technologies}{Salt Lake City, UT}{Night Oce Manager; August 2006 - Feb 2007; \$6.50 Hourly}{Supervisor: Bob Shorten (801) 486-1391}
         \ressubitem{Operate and maintain large format printers for blueprint reproduction}
         \ressubitem{Responsible for scanning, adjusting, printing, cutting binding and packaging of blueprint sets}
-    \end{ressubsec}
+    \end{expsubsec}
 
-    \begin{ressubsec}{Seattle Pacific University Plant Services}{Seattle, WA}{Paint Crew; July 2005 - Sept. 2005; \$8.25 Hourly}{Supervisor: Dan Gill (206) 281-2071}
+    \begin{expsubsec}{Seattle Pacific University Plant Services}{Seattle, WA}{Paint Crew; July 2005 - Sept. 2005; \$8.25 Hourly}{Supervisor: Dan Gill (206) 281-2071}
         \ressubitem{Paint on-campus houses, apartments, dorms and offices; interior and exterior}
-    \end{ressubsec}
+    \end{expsubsec}
 
-%   \begin{ressubsec}{Seattle Pacific University Computer Science Department}{Seattle, WA}{Computer Lab Assistant: January 2005 - March 2006; \$8.25 Hourly}{Mike Tindall (206) 281-2945}
+%   \begin{expsubsec}{Seattle Pacific University Computer Science Department}{Seattle, WA}{Computer Lab Assistant: January 2005 - March 2006; \$8.25 Hourly}{Mike Tindall (206) 281-2945}
 %       \ressubitem{Provide technical assistance for lab users}
 %       \ressubitem{Maintain and operate lab printers and workstations}
-%   \end{ressubsec}
+%   \end{expsubsec}
 
-%   \begin{ressubsec}{Seattle Pacific University Computer and Information Services}{Seattle, WA}{Help Desk Technician: September 2003 - June 2004; \$8.50 Hourly}{Gerard DuGuay (206) 281-2431}
+%   \begin{expsubsec}{Seattle Pacific University Computer and Information Services}{Seattle, WA}{Help Desk Technician: September 2003 - June 2004; \$8.50 Hourly}{Gerard DuGuay (206) 281-2431}
 %       \ressubitem{Provide technical support via phone and email}
 %       \ressubitem{Troubleshoot PC, network and phone problems}
 %       \ressubitem{Provide field support of home PCs and dorm networks}
 %       \ressubitem{Write website copy and tutorials detailing technical processes}
-%   \end{ressubsec}
+%   \end{expsubsec}
 
-    \begin{ressubsec}{Seattle Pacific University Dining Services}{Seattle, WA}{Food Server; Sept. 2002 - July 2003; Sept. 2004 - December 2004; \$8.50 Hourly}{Lisa Valle (206) 281-2851}
+    \begin{expsubsec}{Seattle Pacific University Dining Services}{Seattle, WA}{Food Server; Sept. 2002 - July 2003; Sept. 2004 - December 2004; \$8.50 Hourly}{Lisa Valle (206) 281-2851}
         \ressubitem{Serve customers of cafeteria-style dining}
         \ressubitem{Maintain clean work area, including post-shift cleanup}
-    \end{ressubsec}
+    \end{expsubsec}
 
-    \begin{ressubsec}{Beans and Brews Coffeehouse}{Salt Lake City, UT}{Barista; July 2002 - Sept. 2002; July 2003 - Sept. 2003; \$5.25 Hourly}{Toni (801) 963-7805}
+    \begin{expsubsec}{Beans and Brews Coffeehouse}{Salt Lake City, UT}{Barista; July 2002 - Sept. 2002; July 2003 - Sept. 2003; \$5.25 Hourly}{Toni (801) 963-7805}
         \ressubitem{Prepare and serve coffee drinks}
         \ressubitem{Maintain clean work environment}
         \ressubitem{Responsible for morning opening and night closing}
-    \end{ressubsec}
+    \end{expsubsec}
 
-    \begin{ressubsec}{Baskin-Robbins}{Kearns, UT}{Ice Cream Server; July 2002 - Sept, 2002; \$5.25 Hourly}{Randy (801) 969-3111}
+    \begin{expsubsec}{Baskin-Robbins}{Kearns, UT}{Ice Cream Server; July 2002 - Sept, 2002; \$5.25 Hourly}{Randy (801) 969-3111}
         \ressubitem{Serve ice cream to customers}
         \ressubitem{Responsible for store closing and cleanup}
-    \end{ressubsec}
+    \end{expsubsec}
 
-%   \begin{ressubsec}{CUSA Technologies}{Salt Lake City, UT}{Computer Operator; October 2001 - August 2005 (month ends and summers); \$8.00 Hourly}{Kris Ortega (800) 756-2872}
+%   \begin{expsubsec}{CUSA Technologies}{Salt Lake City, UT}{Computer Operator; October 2001 - August 2005 (month ends and summers); \$8.00 Hourly}{Kris Ortega (800) 756-2872}
 %       \ressubitem{Download and process Credit union statements over UNIX/AIX command line based system}
 %       \ressubitem{Load backup tapes, QA checking on final CD-ROM statement archives}
-%   \end{ressubsec}
+%   \end{expsubsec}
 
 \end{ressection}
 
