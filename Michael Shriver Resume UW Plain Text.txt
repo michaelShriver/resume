@@ -1,0 +1,44 @@
+Michael C. Shriver
+
+2428 NW 56th St; Seattle, WA 98107 
+(360) 474-7453
+michael@shriver.co
+
+Experience
+
+Nordstrom — Seattle, WA
+Systems Analyst 2, Incident Management Team; March 2014 - Present
+– Designed and implemented a comprehensive Major Incident Response procedure
+– Assisted in designing and implementing a Problem Management procedure to ensure Major IT Incidents are tracked and documented to their root causes
+– Provided consistent, reliable advocacy for the Problem Management process and provided cross-team support for implementing Problem Management
+– Designed, created and refined reporting to demonstrate the value of Incident/Problem management to all levels of leadership, from CTO through PMs on partner teams)
+– Worked closely with IT partners to track Incident and Problem management, improve IT system reliability and report on results to leadership
+
+Nordstrom — Seattle, WA
+Desktop Escalation Analyst 2; December 2011 - March 2014
+– Provided second-tier phone support for Nordstrom employees and contractors. Provided in-depth support for Windows desktop software; esp. Microsoft Office products
+– Facilitated communication between business and IT groups during high-impact events, Maintained excellent working relationships with product owners across the company
+– Launched Incident Coordinator team within Service Desk to transition Major Incident management from oncall director rotation
+– Mentored and supervised a small team of level 2 Technicians who were responsible for covering IC roles during weekend and overnight hours
+– Managed Help Desk hardware inventory, troubleshoot and repair Help Desk analyst PCs
+– Maintained and updated Help Desk automatic software deployment script
+
+The Boeing Company — Bellevue, WA
+Tier 2 Workstation Software Support; April 2007 - October 2011
+– Provided excellent customer service and technical expertise for Boeing’s 5000+ internal apps, as well as standard third-party software.
+– Regularly exceeded performance expectations. Often topped team performance boards for calls per hour and average handle times.
+
+Education
+
+• Seattle Pacific University — Seattle, WA
+Bachelor of Arts; English Literature and Computer Science
+
+Skills
+
+• Strong communication skills, written and verbal. Able to explain highly technical procedures clearly, to a diverse audience of ranging technical background
+• Ability to build strong rapport across multiple teams across an organization
+• Passion for building a team based on trust, account ability and common goals
+• Experienced in computer networking, administration and hardware
+• Experience in multiple programming, scripting and markup languages (C++, Python, PHP, Perl, UNIX Shell Scripting, HTML/CSS and LATEX)
+• Extensive experience in ITIL Incident, Problem and Change Management
+• Relationship-driven, goal-oriented workerwith a passion for customer satisfaction
