@@ -1,22 +1,26 @@
 \ProvidesPackage{Resume}
 
+% Import required packages
+
 \usepackage{geometry}
-
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX,
-	UprightFont = Overpass ExtraLight,
-	ItalicFont = Overpass ExtraLight Italic,
-	BoldFont = Overpass Regular,
-	BoldItalicFont = Overpass Italic]
-	{Overpass}
-
 \usepackage{enumitem}
-
 \usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Document setup
+
+\setmainfont[Ligatures=TeX,
+    UprightFont = Overpass ExtraLight,
+    ItalicFont = Overpass ExtraLight Italic,
+    BoldFont = Overpass Regular,
+    BoldItalicFont = Overpass Italic]
+    {Overpass}
+
 \newdateformat{dte}{%
   \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
 
-\usepackage{hyperref}
 \hypersetup{colorlinks=true}
 
 \pagestyle{empty}
@@ -130,3 +134,9 @@
 }{
     \end{itemize}
 }
+
+% A highlighted placeholder for generalized documents to be filled in with specific details
+
+\newcommand{\resplaceholder}[1]{
+    {\color{red}<{#1}>}
+    }
