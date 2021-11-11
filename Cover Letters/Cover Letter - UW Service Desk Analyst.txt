@@ -1,0 +1,13 @@
+Dear Hiring Manager,
+
+I am writing to apply for the Service Desk Administrator position at the University of Washington. It is important to me to find a career that both matches my goals, and contributes to the public good, and I believe this opportunity may fulfill both. Over the last 14 years, I have grown my career from call center and desk side IT support roles to incident management and response. Most recently, though, I have held a Systems Analyst role where I have done extensive data analysis and reporting to all levels of leadership at my organization. The parts of my job I have most consistently enjoyed and excelled at have been the parts that involve reducing friction between complex computer systems and their users; things like installation and setup, troubleshooting, problem solving, direct support, and documentation. I love to make technology work for people, and I derive satisfaction from making people happy.
+
+In past jobs, I’ve enjoyed outside-the-box problem solving to make my co-workers jobs, easier by writing and maintaining tools and scripts. At the Service Desk for Nordstrom, for instance, the company lacked a unified hardware asset management tool, so I maintained a PowerShell script that tracked the department’s workstations, laptops and other hardware. More recently, I wrote a small set of bash scripts to help my team automatically export Tableau reports to image files for easy inclusion in a weekly operations meeting that the company’s CTO held. This significantly streamlined our workflow and freed up my team members to focus more energy on non-IT changes in a high-stress timeframe. I created and maintained complex dynamic dashboards for executive assistants, so they could easily and quickly present data to their executives. They found the resources I created to be invaluable timesavers. Finally, In my role as an Incident Manager, I worked closely with the developer team that rolled out our new ServiceNow ticketing system, helping collect and curate user stories, finalize designs, perform user testing, and collect feedback to make the final product something that worked for a wide variety of users' needs. I can bring a wide range of maintenance, support, and customer service skills to UW, and I will focus all of them on making technology work for all staff.
+
+I am excited for the opportunity to grow my career and skills at the University of Washington and I am eager for the next step of my career to be in alignment with my passions and values; I would love to know more about your team to see if it would be a good fit.
+
+Thank you for considering me. I hope to hear from you soon.
+
+Sincerely,
+
+Michael Shriver
